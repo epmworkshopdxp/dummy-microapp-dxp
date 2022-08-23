@@ -1,0 +1,15 @@
+<app-loader></app-loader>
+
+<div class="epm-container">
+
+  <ng-container *ngIf="!isMobile">
+    <app-header></app-header>
+  </ng-container>
+
+  <app-content></app-content>
+
+  <ng-container *ngIf="!isMobile">
+    <app-footer></app-footer>
+  </ng-container>
+
+</div>

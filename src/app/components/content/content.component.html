@@ -1,0 +1,69 @@
+<epm-helper type="nofill" typeIcon="INFO">
+  Esta aplicación DUMMY se construyó con el objetivo de validar la viabilidad técnica de integrar un micro front end
+  construido en tecnología Angular en una solución DXP. <br /><br />
+  La aplicación detecta si se está ejecutando en el contexto de una pantalla de dimensiones limitadas (móvil) y en este
+  caso NO renderiza el encabezado y pié de página.<br /><br />
+  Es una simuación de un formulario de captura de información, pero no se ejecuta ninguna transacción.
+</epm-helper>
+
+<div class="epm-row">
+  <div class="epm-col-12 epm-col-sm-6">
+    <epm-form-field label="Tipo de documento" typeStyle="normal">
+      <epm-select typeStyle="normal">
+        <option value="1">Cédula de ciudadanía</option>
+        <option value="2">Cédula de extranjería</option>
+        <option value="3">Tarjeta de identidad</option>
+        <option value="4">NIT</option>
+      </epm-select>
+    </epm-form-field>
+  </div>
+  <div class="epm-col-12 epm-col-sm-6">
+    <epm-form-field label="Número de documento" typeStyle="NORMAL">
+      <epm-input type="text" typeStyle="NORMAL">
+      </epm-input>
+    </epm-form-field>
+  </div>
+</div>
+
+<div class="epm-row">
+  <div class="epm-col-12 epm-col-sm-6">
+    <epm-form-field label="Nombre completo" typeStyle="NORMAL">
+      <epm-input type="text" typeStyle="NORMAL" placeholder="" maxlength="" minlength="">
+      </epm-input>
+    </epm-form-field>
+  </div>
+  <div class="epm-col-12 epm-col-sm-6">
+    <epm-form-field label="Correo Electrónico" typeStyle="NORMAL">
+      <epm-input type="text" typeStyle="NORMAL">
+      </epm-input>
+    </epm-form-field>
+  </div>
+</div>
+
+<div class="epm-row">
+  <div class="epm-col-12 epm-col-sm-6">
+    <epm-form-field label="Teléfono" typeStyle="NORMAL">
+      <epm-input type="text" typeStyle="NORMAL">
+      </epm-input>
+    </epm-form-field>
+  </div>
+</div>
+
+<div class="epm-row">
+  <div class="epm-col">
+    <epm-form-field label="Observaciones" typeStyle="NORMAL">
+      <epm-textarea typeStyle="NORMAL" placeholder="Observaciones..." maxlength="" minlength="">
+      </epm-textarea>
+    </epm-form-field>
+  </div>
+</div>
+
+<div class="epm-row">
+  <div class="epm-col-11 epm-col-sm-4">
+    <div>
+      <epm-button color="PRIMARY" (epmClick)="onSubmit()">
+        Aceptar
+      </epm-button>
+    </div>
+  </div>
+</div>
